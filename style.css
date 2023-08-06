@@ -28,14 +28,17 @@ body{
 h2{
     font-size: 3em;
     color: white;
+    -webkit-text-stroke: 1px navy;
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
 
 #test-memory{
-  font-size: 1.5em;
+  font-size: 1.7em;
   text-transform: uppercase;
   color: white;
+  font-weight: 600;
+  -webkit-text-stroke: 1px navy;
   margin-top: 0;
   background: rgba(19, 8, 82, 0.2);
   padding: 12px;
@@ -44,9 +47,10 @@ h2{
 .reset{
     padding: 15px 20px;
     color: white;
+    -webkit-text-stroke: 0.5px navy;
     background:rgb(0, 80, 102);
     border: none;
-    font-size: 1.5em;
+    font-size: 1.6em;
     letter-spacing: 0.25em;
     text-transform: uppercase;
     cursor: pointer;
