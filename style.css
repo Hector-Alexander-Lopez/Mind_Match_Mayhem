@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bangers';
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('images/space-background.jpg');
+    background-size: cover;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    background: rgba(13, 59, 97, 0.25);
+    padding: 40px 60px;
+}
+
+h2{
+    font-size: 3em;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.reset{
+    padding: 15px 20px;
+    color: white;
+    background:rgb(0, 80, 102);
+    border: none;
+    font-size: 1.5em;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.reset:focus{
+    color: rgb(0, 108, 137);
+    background: white;
+}
+
+.game{
+    width: 550px;
+    height: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    transform-style: preserve-3d0;
+    perspective: 500px;
+}
+
+.card{
+    position: relative;
+    width: 130px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    background: white;
+    transform: rotateY(180deg);
+    transition: 0.25s;
+    background-size: cover;
+}
+
+.card.boxOpen{
+    transform: rotateY(0deg);
+}
+
+.card::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('images/main.jpg');
+    background-size: cover;
+    transition: 0.25s;
+    transform: rotate(0deg);
+    backface-visibility: hidden;
+}
+
+.boxOpen:after , .boxMatch:after{
+    transform: rotateY(180deg);
+}
+
+.container>p a,
+.container>p {
+    font-family: monospace;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 389.99px) {
+    .container {
+        gap: 10px;
+        padding: 10px;
+      }
+    
+      h2 {
+        font-size: 2em;
+      }
+    
+      .reset {
+        padding: 8px 12px;
+        font-size: 1em;
+      }
+    
+      .game {
+        width: 240px;
+        height: 240px;
+        gap: 3px;
+      }
+    
+      .card {
+        width: 55px;
+        height: 55px;
+        font-size: 1.2em;
+      }
+    
+}
+
+@media (min-width: 390px) and (max-width: 450px) {
+    .container {
+      gap: 20px;
+      padding: 30px 40px;
+    }
+  
+    h2 {
+      font-size: 2.2em;
+    }
+  
+    .reset {
+      padding: 12px 18px;
+      font-size: 1.3em;
+    }
+  
+    .game {
+      width: 320px;
+      height: 320px;
+      gap: 8px;
+    }
+  
+    .card {
+      width: 70px;
+      height: 70px;
+      font-size: 2em;
+    }
+  }
