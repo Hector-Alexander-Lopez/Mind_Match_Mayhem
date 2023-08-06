@@ -32,6 +32,15 @@ h2{
     letter-spacing: 0.1em;
 }
 
+#test-memory{
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: white;
+  margin-top: 0;
+  background: rgba(19, 8, 82, 0.2);
+  padding: 12px;
+}
+
 .reset{
     padding: 15px 20px;
     color: white;
