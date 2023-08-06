@@ -1,4 +1,4 @@
-// An array containing image URLs for the emojis
+// An array containing image URLs for the images
 const emojis = [
   "images/astronaut.jpg",
   "images/astronaut.jpg",
@@ -37,11 +37,11 @@ function shuffleEmojis(array) {
 
 let shuffledEmojis = shuffleEmojis(emojis);
 
-// Create the board and add emojis to the cards
+// Adds images to the cards
 for (let i = 0; i < shuffledEmojis.length; i++) {
   let box = document.createElement("div");
   box.className = "card";
-  // Use the emoji image URL as the background image
+  // Uses the image URL as the background image
   box.style.backgroundImage = `url(${shuffledEmojis[i]})`;
 
   // Add click event listener to each box
@@ -74,13 +74,13 @@ for (let i = 0; i < shuffledEmojis.length; i++) {
 }
 
 function resetBoard() {
-  // Clear the game container
+  // Clears the game container
   document.querySelector(".game").innerHTML = "";
 
-  // Reshuffle the emojis
+  // Reshuffles the cards
   shuffledEmojis = shuffleEmojis(emojis);
 
-  // Create the board and add emojis to the cards
+  // Add pictures to the cards
   for (let i = 0; i < shuffledEmojis.length; i++) {
     let box = document.createElement("div");
     box.className = "item";

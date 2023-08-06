@@ -11,7 +11,7 @@ body{
     align-items: center;
     min-height: 100vh;
     background-image: url('images/space-background.jpg');
-    background-size: cover;
+    background-size: cover;  
 }
 
 .container{
@@ -125,7 +125,6 @@ h2{
         height: 55px;
         font-size: 1.2em;
       }
-    
 }
 
 @media (min-width: 390px) and (max-width: 450px) {
